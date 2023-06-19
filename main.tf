@@ -7,3 +7,5 @@ provider "azurerm" {
   subscription_id = var.arm_subscription_id
   environment     = var.cloud_enviornment
 }
+
+data "azurerm_client_config" "current" {}

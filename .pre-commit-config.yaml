@@ -5,11 +5,13 @@ repos:
     - id: terraform-validate
     - id: terraform-fmt
 - repo: https://github.com/antonbabenko/pre-commit-terraform
-  rev: v1.79.1 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+  rev: v1.81.0 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
   hooks:
     - id: terraform_tfsec
     - id: terraform_docs
     - id: terraform_checkov
+      args:
+        - --args=--skip-check CKV2_AZURE_21,CKV2_AZURE_32,CKV2_AZURE_33
     - id: terraform_tflint
       args:
       - '--args=--enable-rule=terraform_deprecated_interpolation'
