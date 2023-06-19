@@ -1,6 +1,10 @@
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
-  features {}
+  features {
+    key_vault {
+      purge_soft_delete_on_destroy = true
+    }
+  }
   tenant_id       = var.arm_tenant_id
   client_id       = var.arm_client_id
   client_secret   = var.arm_client_secret
