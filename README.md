@@ -1,6 +1,6 @@
-# Terraform Azurem Template
+# Terraform Azurerm Template
 
-The main purpose of this repository is to create a template for [Terraform](https://www.terraform.io/). This project will focus on the [Azurem](https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0) provider.
+The main purpose of this repository is to create a template for [Terraform](https://www.terraform.io/). This project will focus on the [Azurerm](https://registry.terraform.io/providers/hashicorp/azurerm/latest) provider.
 
 ## Development
 
