@@ -15,6 +15,7 @@ The main purpose of this repository is to create a template for [Terraform](http
 
 1. Have a [Azure Portal](https://portal.azure.com/) account. 
 2. You will need to create a Service Principal with a Client Secret [follow instructions](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret#creating-a-service-principal-in-the-azure-portal).
+3. Other permissions needed are Azure Key Vault and Azure Storage for the Terraform client.
 
 ## Usage
 
@@ -22,7 +23,7 @@ The main purpose of this repository is to create a template for [Terraform](http
 2. Plan your changes with `terragrunt plan` to see what changes will be made,
 3. If you're happy with the changes `terragrunt apply`.
 
-Please note that `.tfstate` files are stored locally on your machine as no backend has been specified. If you would like to properly version control your state files, it is possible to use an S3 bucket to store these files. 
+>Please note that `.tfstate` files are stored locally on your machine as no backend has been specified. If you would like to properly version control your state files, it is possible to use an azure storage account to store these files. 
 This will ensure anyone else other than you running a plan/apply will always be using the same state file.
 
 ## Pre-Commit hooks
