@@ -5,9 +5,7 @@
 # https://learn.microsoft.com/en-us/azure/developer/terraform/store-state-in-azure-storage?tabs=azure-cli
 
 terraform {
-  backend "local" {
-    path = "terraformstate/terraform.tfstate"
-  }
+  backend "local" {}
 }
 
 # (2) Only uncomment out this code block, after the tfstate storage account has been created
