@@ -23,8 +23,11 @@ The main purpose of this repository is to create a template for [Terraform](http
 2. Plan your changes with `terragrunt plan` to see what changes will be made,
 3. If you're happy with the changes `terragrunt apply`.
 
+> **IMPORTANT**
+> 
 >Please note that `.tfstate` files are stored locally on your machine as no backend has been specified. If you would like to properly version control your state files, it is possible to use an azure storage account to store these files. 
-This will ensure anyone else other than you running a plan/apply will always be using the same state file.
+> This will ensure anyone else other than you running a plan or apply will be using the same state file.
+> 
 
 ## Pre-Commit hooks
 
@@ -48,15 +51,15 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | = 1.5.4 |
-| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | 3.58.0 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | 3.5.1 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.7 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 3.73.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.5.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | 3.58.0 |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | 3.73.0 |
 | <a name="provider_random"></a> [random](#provider\_random) | 3.5.1 |
 
 ## Modules
@@ -67,18 +70,18 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [azurerm_key_vault.tfstate_key_vault](https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/key_vault) | resource |
-| [azurerm_key_vault_access_policy.tfstate_storage](https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/key_vault_access_policy) | resource |
-| [azurerm_key_vault_key.tfstate_key_vault_key](https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/key_vault_key) | resource |
-| [azurerm_log_analytics_storage_insights.tfstate_analytics_storage_insights](https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/log_analytics_storage_insights) | resource |
-| [azurerm_log_analytics_workspace.tfstate_analytics_workspace](https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/log_analytics_workspace) | resource |
-| [azurerm_monitor_diagnostic_setting.tfstate_diagnostic_setting](https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/monitor_diagnostic_setting) | resource |
-| [azurerm_resource_group.environment_rg](https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/resource_group) | resource |
-| [azurerm_storage_account.tfstate](https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/storage_account) | resource |
-| [azurerm_storage_account_customer_managed_key.tfstate_cmk](https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/storage_account_customer_managed_key) | resource |
-| [azurerm_storage_container.tfstate](https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/resources/storage_container) | resource |
-| [random_string.resource_code](https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/string) | resource |
-| [azurerm_client_config.current](https://registry.terraform.io/providers/hashicorp/azurerm/3.58.0/docs/data-sources/client_config) | data source |
+| [azurerm_key_vault.tfstate_key_vault](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault) | resource |
+| [azurerm_key_vault_access_policy.tfstate_storage](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_access_policy) | resource |
+| [azurerm_key_vault_key.tfstate_key_vault_key](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_key) | resource |
+| [azurerm_log_analytics_storage_insights.tfstate_analytics_storage_insights](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/log_analytics_storage_insights) | resource |
+| [azurerm_log_analytics_workspace.tfstate_analytics_workspace](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/log_analytics_workspace) | resource |
+| [azurerm_monitor_diagnostic_setting.tfstate_diagnostic_setting](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_diagnostic_setting) | resource |
+| [azurerm_resource_group.environment_rg](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group) | resource |
+| [azurerm_storage_account.tfstate](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account) | resource |
+| [azurerm_storage_account_customer_managed_key.tfstate_cmk](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account_customer_managed_key) | resource |
+| [azurerm_storage_container.tfstate](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_container) | resource |
+| [random_string.resource_code](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string) | resource |
+| [azurerm_client_config.current](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config) | data source |
 
 ## Inputs
 
