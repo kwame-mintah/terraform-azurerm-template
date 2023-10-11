@@ -17,6 +17,12 @@ The main purpose of this repository is to create a template for [Terraform](http
 2. You will need to create a Service Principal with a Client Secret [follow instructions](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret#creating-a-service-principal-in-the-azure-portal).
 3. Other permissions needed are Azure Key Vault and Azure Storage for the Terraform client.
 
+## Information on HashiCorp BSL License Change
+
+Due to the HashiCorp BSL license change, restricting Terraform to the latest open source version (`1.5.7`). 
+Will create a new project template using OpenTofu. To learn more, see the official [OpenTofu website](https://opentofu.org/) 
+and [project status](https://github.com/opentofu/opentofu/blob/main/WEEKLY_UPDATES.md).
+
 ## Usage
 
 1. Navigate to the environment you would like to deploy,
@@ -51,7 +57,7 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.7 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0, <= 1.5.7 |
 | <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 3.73.0 |
 | <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.5.1 |
 
